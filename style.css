@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'TT Hoves', sans-serif;
+    color: #222;                                
+}
+
+section {
+    padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
+}
+
+section.hello {
+    padding-top: 40px;
+    background-image: url(./img/html_css_js.png);
+    background-repeat: no-repeat;
+    background-position: top 20px right 40px;
+    background-size: 35%;
+}
+
+.logo {
+    height: calc(30px + (41 - 30) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.courseInfo {
+    display: flex;
+    gap: 30px 160px;
+    flex-wrap: wrap;
+    margin-top: calc(28px + (85 - 28) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(48px + (76 - 48) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.courseData {
+    font-size: 21px;
+    line-height: 140%;    
+}
+
+.courseData .value {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Chava', sans-serif;
+    font-size: calc(42px + (80 - 42) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 110%;
+}
+
+p {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.cta {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 328px;
+    padding: 20px 0px;
+    border-radius: 12px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 117%;
+}
+
+button.purple {
+    background: #6E3ABA;
+    color: white;
+    border: 1px solid #6E3ABA;
+}
+
+button.white {
+    background: white;
+    color: #6E3ABA;
+    border: 1px solid #6E3ABA;
+}
+
+section.second {
+    margin-top: calc(11vw + 18.5px);
+    padding: 0 calc(23.5px + (120 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.recom {
+    margin-right: calc(23.5px + (391 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 117%;
+}
+
+.students {
+    display: flex;
+    gap: 40px 70px;
+    flex-wrap: wrap;
+    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(40px + (52 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.studentType {
+    width: calc(328px + (450 - 328) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(350px + (468 - 350) * ((100vw - 375px) / (1280 - 375)));
+    box-sizing: border-box;
+    margin-bottom: calc(40px + (52 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.memoji {
+    height: calc(180px + (210 - 180) * ((100vw - 375px) / (1280 - 375)));
+    display: block; 
+}
+
+.name {
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 600;
+    line-height: 140%;  
+    margin-top: 10px;
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.inform {
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+} 
+
+.saleContainer {
+    background-color: #6E3ABA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
+    margin-top: calc(11vw + 18.5px);
+}
+
+.saleContainer h3 {
+    color: white;
+    font-size: calc(2vw + 26.5px);
+    margin-bottom: calc(4.1vw + 4.7px);
+}
+
+.time {
+    display: flex;
+    gap: 20px;
+    margin-bottom: calc(4vw + 6px);
+}
+
+.date {
+    font-size: calc(12.6vw + 12.8px);
+    font-family: "Chava", sans-serif;
+}
+
+.timecard span {
+    display: block;
+    text-align: center; 
+    font-size: calc(1.9vw + 3px);
+}
+
+
+section.third {
+    margin-top: calc(11vw + 18.5px);
+    padding: 0 calc(23.5px + (120 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+}
+.result1 {
+    display: flex;
+    gap: 30px 90px;
+    flex-wrap: wrap;
+    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(40px + (52 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+.courseResult {
+    margin-right: calc(23.5px + (138 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 117%;
+}
+.resultType {
+    width: calc(8vw + 298px);
+    box-sizing: border-box; 
+}
+.resultname {
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 600;
+    line-height: 140%;  
+    margin-top: 10px;
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 375px) / (1280 - 375)));
+}
+.resultInform {
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+}
+
+.legendContainer {
+    margin-top: calc(11vw + 18.5px);
+    padding: 0 calc(23.5px + (120 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+}
+
+h2 {
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    margin-bottom: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+    text-transform: uppercase;
+    line-height: 117%;
+}
+
+.infoContainer {
+    display: flex;
+    gap: calc(20px + (51 - 20) * ((100vw - 375px) / (1280 - 375)));
+    flex-wrap: wrap;
+}
+
+.infoCard {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.infoCard img {
+    width: 100%;
+}
+
+.infobox {
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+h4 {
+    font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.legendSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: calc(30px + (40 - 30) * ((100vw - 375px) / (1280 - 375)));
+    column-gap: calc(10px + (90 - 10) * ((100vw - 375px) / (1280 - 375)));
+    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.skills img {
+    width: 36px;
+}
+
+.skills {
+    display: block;
+    margin-top: 10px;
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+}
