@@ -20,16 +20,6 @@ section.hello {
     background-size: 30%;
 }
 
-@media (max-width: 376px) {
-    section.hello {
-        padding-top: 40px;
-        background-image: url(./img/html_css_js.png);
-        background-repeat: no-repeat;
-        background-position: top 77px right 4px;
-        background-size: 45%;
-    }
-}
-
 .logo {
     height: calc(30px + (41 - 30) * ((100vw - 375px) / (1280 - 375)));
 }
@@ -261,4 +251,15 @@ h4 {
     margin-top: 10px;
     font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
     line-height: 140%;
+}
+
+
+@media (max-width: 376px) {
+    section.hello {
+        padding-top: 40px;
+        background-image: url(./img/html_css_js.png);
+        background-repeat: no-repeat;
+        background-position: top 77px right 4px;
+        background-size: 45%;
+    }
 }
