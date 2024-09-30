@@ -69,6 +69,8 @@ button {
     font-size: 18px;
     font-weight: 500;
     line-height: 117%;
+
+    cursor: pointer;
 }
 
 button.purple {
@@ -244,6 +246,7 @@ h4 {
 
 .skills img {
     width: 36px;
+    display: block;  
 }
 
 .skills {
@@ -337,6 +340,8 @@ section.diplom {
         line-height: 140%;
     }
 
+    
+
 }
     section.salary {
         margin-top: calc(11vw + 18.5px);
@@ -404,7 +409,6 @@ section.diplom {
             display: flex;
             flex-direction: column;
         }
-
     }
 
     .frame {
@@ -547,3 +551,267 @@ section.diplom {
     .feedbackStudent span {
         font-size: 21px;
     }
+
+    .wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        display: none;
+    }
+
+    .popUp {
+        background: #F0F7FD;
+        width: calc(326px + (800 - 326) * ((100vw - 375px) / (1280 - 375)));
+        height: 80vh;
+        border-radius: 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        display: none;
+
+    }
+
+    .form {
+        width: 320px;
+    }
+
+    .form h4 {
+        text-transform: uppercase;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .form input {
+        display: block;
+        width: 100%;
+
+        border: 0;
+        border-bottom: 1px solid #A1A1A1;
+        outline: 0;
+        background: transparent;
+
+        font-size: 18px;
+        line-height: 27px;
+        padding: 10px 0;
+    }
+
+    .form button {
+        margin-top: 30px;
+    }
+
+    .thankYouPage {
+        background: #222222;
+        width: calc(326px + (800 - 326) * ((100vw - 375px) / (1280 - 375)));
+        height: 80vh;
+        border-radius: 12px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thankYouPage h2 {
+        margin: 0;
+        font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 117%;
+        text-align: center; 
+    }
+
+        .about {
+            margin-top: calc(11vw + 18.5px);
+            padding: 0 calc(23.5px + (120 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+        }
+
+        .about h2 {
+            margin: 0;
+            font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 117%;
+        }
+
+        .aboutInform {
+            margin-top: calc(34px + (80 - 34) * ((100vw - 375px) / (1280 - 375)));
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 97px; 
+        }
+
+        @media (max-width: 600px) {
+            .aboutInform {
+                display: block;
+            } 
+        }
+
+        .aboutInform img {
+        width: 110px;
+        }
+
+        .aboutInform p {
+        font-size: calc(22px + (27 - 22) * ((100vw - 375px) / (1280 - 375)));
+        font-weight: 600; 
+        line-height: 140%; 
+        width: calc(328px + (426 - 328) * ((100vw - 375px) / (1280 - 375))); 
+        }
+
+        .aboutStudents .statistic {
+        font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+        font-weight: 700;
+        line-height: 117%;
+        margin-top: 40px; 
+        }
+
+        .aboutStudents span {
+        font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+        } 
+
+        .party {
+            margin-top: calc(11vw + 18.5px);
+            padding: 0 calc(23.5px + (120 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+        }
+
+        .party h2 {
+            margin: 0;
+            font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 117%;
+            margin-bottom: 20px;  
+        }
+
+        .party span {
+            font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+            margin-right: calc(23.5px + (300 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+            display: block;  
+        }
+
+        .partyPics {
+            margin-top: 20px; 
+        }
+
+        .lastPage {
+            margin-top: calc(11vw + 18.5px);
+            padding: 0 calc(23.5px + (120 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+            background-color: #222222; 
+            display: flex;
+            flex-direction: row;  
+            gap: calc(88px + (166 - 88) * ((100vw - 375px) / (1280 - 375)));
+        }
+
+        .now {
+            color: white;
+        }
+
+        .now h2 {
+            margin: 0;
+            font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 117%;
+            margin-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+            margin-bottom: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+        }
+
+        .now img {
+            margin-right: calc(1.5px + (5 - 1.5) * ((100vw - 375px) / (1280 - 375)));
+        }
+
+        .now span {
+            font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+        }
+
+        .attainments {
+            margin-top: 24px; 
+        }
+
+        .sendRequest {
+            background-color: white; 
+            margin-top: 100px;
+            margin-bottom: calc(59px + (80 - 59) * ((100vw - 375px) / (1280 - 375)));
+            border-radius: 12px;
+            width: calc(326px + (1200 - 326) * ((100vw - 375px) / (1280 - 375)));
+            height: 85vh; 
+            display: flex;
+            justify-content: center;  
+            position: relative; 
+        }
+
+        #salePng {
+            width: calc(105px + (159 - 105) * ((100vw - 375px) / (1280 - 375)));
+            position: absolute;
+            top: -50px;
+            left: -50px; 
+        }
+
+        .sendRequest h4 {
+            text-transform: uppercase;
+            font-size: 26px;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 10px; 
+
+        }
+
+        .sendRequest span {
+            font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+            display: block; 
+            text-align: center; 
+            margin-bottom: 30px; 
+        }
+
+        .form p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 117%; 
+            text-align: center;
+            color: #222222; 
+            opacity: 50%; 
+            margin-top: 41px;
+            margin-bottom: 10px; 
+        }
+
+        .form .contacts {
+            margin: 0;
+            font-weight: 400; 
+        }
+
+        @media (max-width: 400px){
+            .lastPage {
+                display: flex;
+                flex-direction: column;
+                gap: 0; 
+            } 
+
+            .sendRequest { 
+                height: 540px; 
+            }
+
+            form {
+                margin-right: 30px;
+                margin-left: 30px; 
+            }
+            button {
+                width: 267px;
+            }
+
+            #salePng {
+                top: -50px;
+                left: auto; 
+                right: -10px; 
+            }
+        }
