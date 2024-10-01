@@ -147,7 +147,7 @@ section.second {
 
 .time {
     display: flex;
-    gap: 20px;
+    gap: 0; 
     margin-bottom: calc(4vw + 6px);
 }
 
