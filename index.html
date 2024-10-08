@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.cdnfonts.com/css/chava" rel="stylesheet">
     <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -284,13 +285,30 @@
 <section class="party">
     <h2>Все еще сомневаешься?</h2>
     <span>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</span>
-    <div class="partyPics">
-        <img src="./img/slider_image_01.png" alt="Выпускной фото 1">
-        <img src="./img/slider_image_02.png" alt="Выпускной фото 2">
-        <img src="./img/slider_image_03.png" alt="Выпускной фото 3">
-        <img src="./img/slider_image_04.png" alt="Выпускной фото 4"> 
-        <img src="./img/slider_image_05.png" alt="Выпускной фото 5">
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/slider_image_01.png" alt="Выпускной фото 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slider_image_02.png" alt="Выпускной фото 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slider_image_03.png" alt="Выпускной фото 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slider_image_04.png" alt="Выпускной фото 4">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slider_image_05.png" alt="Выпускной фото 5">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-scrollbar"></div>
     </div>
+
 </section>
 
 <section class="lastPage">
@@ -327,7 +345,31 @@
         </div>
     </div>
 </section>
-
     <script src="./script.js"></script>
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000, 
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                850: {
+                    slidesPerView: 3,
+                    spaceBetween: 25
+                },
+                navigation: {
+                    el: '.swiper-pagination',
+                },
+    
+            }
+        }); 
+    </script>
+
 </body>
 </html>

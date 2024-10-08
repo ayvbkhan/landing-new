@@ -815,3 +815,8 @@ section.diplom {
                 right: -10px; 
             }
         }
+
+    .swiper img {
+        width: 100%; 
+    }
+ 
